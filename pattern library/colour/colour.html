@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarWing Colours</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS for Navbar & Footer (copied) -->
+    <link rel="stylesheet" href="../styles/global-nav.css" />
+    <link rel="stylesheet" href="../styles/buttons-cards-footer.css" />
+  </head>
+  <body>
+    <!-- Header/Navbar-->
+    <nav class="navbar navbar-expand-lg colourNeutralCool">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <a class="navbar-brand airline-logo" href="../../index.html"
+            ><img src="../assets/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Colour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page_layout/page_layout.html"
+              >Page Layouts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data_vis/dataVisualization.html"
+              >Data Visualization</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="componentsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Components</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../buttons/buttons.html"
+                  >Buttons</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../cards/cards.html">Cards</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../fields/fields.html">Fields</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../footer/footer.html">Footer</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../heading/heading.html"
+                  >Header</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../navigation/navigation.html"
+                  >Navigation</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page content-->
+    <div id="colours" class="container my-5">
+      <!-- Title -->
+      <h2 class="heading-font">Colours</h2>
+      <hr />
+
+      <!-- Canonical Colour(s) -->
+      <section class="container mt-5">
+        <h3 class="heading-font">Brand</h3>
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <div class="card colourGreenStarWing">
+              <div class="card-body">
+                <h5 class="card-title">StarWing Green</h5>
+                <p class="card-text">#B9D840<br />--colourGreenStarWing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Functional Colour(s) -->
+      <section class="container mt-5">
+        <h3 class="heading-font">Functional Colours</h3>
+        <small
+          >Purpose-specific colours that help inform consistent colour
+          usage</small
+        >
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <div class="card colourWhite">
+              <div class="card-body">
+                <h5 class="card-title">True White</h5>
+                <p class="card-text">#FFFFFF<br />--colourWhite</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourNeutralWarm">
+              <div class="card-body">
+                <h5 class="card-title">Warm Neutral</h5>
+                <p class="card-text">#EEEAEA<br />--colourNeutralWarm</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourNeutralCool">
+              <div class="card-body">
+                <h5 class="card-title">Cool Neutral</h5>
+                <p class="card-text">#ECECF3<br />--colourNeutralCool</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourBlack text-white">
+              <div class="card-body">
+                <h5 class="card-title">True Black</h5>
+                <p class="card-text">#000000<br />--colourBlack</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Colour(s) -->
+      <section class="container mt-5">
+        <h3 class="heading-font">Feedback Colours</h3>
+        <small
+          >Colours used to provide visual feedback to users in response to their
+          interactions</small
+        >
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <div class="card colourGreenSuccess">
+              <div class="card-body">
+                <h5 class="card-title">Success Green</h5>
+                <p class="card-text">#DFF782<br />--colourGreenSuccess</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourRedError">
+              <div class="card-body">
+                <h5 class="card-title">Error Red</h5>
+                <p class="card-text">#FF9D9D<br />--colourRedError</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourYellowWarning">
+              <div class="card-body">
+                <h5 class="card-title">Warning Yellow</h5>
+                <p class="card-text">#FCE76F<br />--colourYellowWarning</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourBlueInfo">
+              <div class="card-body">
+                <h5 class="card-title">Info Blue</h5>
+                <p class="card-text">#91CBF8<br />--colourBlueInfo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accent Colour(s) -->
+      <section class="container mt-5">
+        <h3 class="heading-font">Accent Colours</h3>
+        <small
+          >Colours used to add visual interest, create emphasis, or highlight
+          specific elements</small
+        >
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <div class="card colourRedPastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Red</h5>
+                <p class="card-text">#FAB0BA<br />--colourRedPastel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourOrangePastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Orange</h5>
+                <p class="card-text">#FDDAA5<br />--colourOrangePastel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourYellowPastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Yellow</h5>
+                <p class="card-text">#FDFCB8<br />--colourYellowPastel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourGreenPastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Green</h5>
+                <p class="card-text">#ACFCD7<br />--colourGreenPastel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourBluePastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Blue</h5>
+                <p class="card-text">#BDE0FE<br />--colourBluePastel</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourPurplePastel">
+              <div class="card-body">
+                <h5 class="card-title">Pastel Purple</h5>
+                <p class="card-text">#E5C9F8<br />--colourPurplePastel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Text Colours -->
+      <section class="container mt-5">
+        <h3 class="heading-font">Text Colours</h3>
+        <small>
+          For dark text on a light background, we use either 'black' or 'soft
+          black', and for light text on a dark background, we use either 'white'
+          or 'soft white'
+        </small>
+        <div class="row">
+          <div class="col-md-6 my-2">
+            <div class="card colourTextBlack colourWhite">
+              <div class="card-body">
+                <h5 class="card-title">Black Text</h5>
+                <p class="card-text">
+                  rgba(0, 0, 0, .87)<br />--colourTextBlack
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourTextBlackSoft colourWhite">
+              <div class="card-body">
+                <h5 class="card-title">Soft Black Text</h5>
+                <p class="card-text">
+                  rgba(0, 0, 0, .58)<br />--colourTextBlackSoft
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourTextWhite colourBlack">
+              <div class="card-body">
+                <h5 class="card-title">White Text</h5>
+                <p class="card-text">
+                  rgba(255, 255, 255, 1)<br />--colourTextWhite
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 my-2">
+            <div class="card colourTextWhiteSoft colourBlack">
+              <div class="card-body">
+                <h5 class="card-title">Soft White Text</h5>
+                <p class="card-text">
+                  rgba(255, 255, 255, .70)<br />--colourTextWhiteSoft
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="starwing-footer colourNeutralWarm">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="components">
+        <a href="../buttons/buttons.html"><p>Buttons</p></a>
+        <a href="../cards/cards.html"><p>Cards</p></a>
+        <a href="../fields/fields.html"><p>Fields</p></a>
+        <a href="../footer/footer.html"><p>Footer</p></a>
+        <a href="../heading/heading.html"><p>Header</p></a>
+        <a href="../navigation/navigation.html"><p>Navigation</p></a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

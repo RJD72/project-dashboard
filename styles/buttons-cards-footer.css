@@ -1,0 +1,133 @@
+.starwing-btn,
+a.starwing-btn,
+.starwing-dropbtn {
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+	font-size: 1rem;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	max-width: fit-content;
+}
+
+.starwing-btn:enabled:hover,
+a:hover {
+	filter: brightness(90%);
+}
+
+.starwing-btn:enabled:active,
+a.starwing-btn:active {
+	transform: scale(0.97);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+button.starwing-btn:disabled {
+	background-color: #e8e8e8;
+	color: #9b9b9b;
+	cursor: not-allowed;
+}
+
+a.starwing-btn {
+	display: inline-block;
+	margin: 0;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--colourNeutralCool);
+	border-radius: 6px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Style for dropdown items */
+.dropdown-content a {
+	padding: 12px 16px;
+	display: block;
+}
+
+.starwing-dropdown {
+	width: fit-content;
+}
+
+/* Hover effect on dropdown items */
+.dropdown-content a:first-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 6px 6px 0 0;
+}
+
+.dropdown-content a:not(:first-child):not(:last-child):hover {
+	background-color: var(--colourNeutralWarm);
+}
+
+.dropdown-content a:last-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 0 0 6px 6px;
+}
+
+/* Show the dropdown content when the button is hovered */
+.starwing-dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Card */
+
+.starwing-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 12px;
+	border: none;
+	width: 300px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.starwing-card-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24px;
+	margin-left: 16px;
+	margin-right: 16px;
+	border-radius: 12px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+	height: 40px;
+}
+
+.starwing-card-info {
+	border: none;
+	padding: 24px;
+	text-align: center;
+}
+
+.starwing-card-title {
+	letter-spacing: 0;
+	line-height: 1.375;
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 8px;
+}
+
+.starwing-card-footer {
+	padding: 12px;
+	border-radius: 0 0 12px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.starwing-card-tag {
+	font-weight: 300;
+	font-size: 12px;
+	display: block;
+}
+
+pre {
+	font-size: 16px;
+}

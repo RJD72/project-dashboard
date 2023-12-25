@@ -1,0 +1,110 @@
+@media only screen and (min-width: 400px) {
+	.chart {
+		padding: 2rem 0.5rem;
+	}
+}
+
+@media only screen and (min-width: 566px) {
+	nav.navbar div.container {
+		justify-content: start;
+	}
+
+	.nav-elements {
+		align-items: center;
+		flex-direction: row;
+	}
+	h1.heading-font {
+		font-size: 2rem;
+		padding: 0;
+		margin: 0;
+		margin-right: 2rem;
+	}
+	a.airline-logo img {
+		width: 7em;
+	}
+
+	a.airline-logo {
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 711px) {
+	.dashboard-container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#chart1,
+	#chart2,
+	#chart3,
+	#chart4,
+	#chart5,
+	#chart6,
+	#chart7 {
+		grid-column: 1 / span 2;
+	}
+
+	.tab-container {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	#chart1,
+	#chart2,
+	#chart3,
+	#chart4,
+	#chart5,
+	#chart6,
+	#chart7 {
+		grid-column: auto;
+	}
+
+	#chart7 {
+		grid-row: span 2;
+	}
+
+	#chart7 .chart-title {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.dashboard-container {
+		grid-template-columns: repeat(6, 1fr);
+	}
+	#chart4,
+	#chart7,
+	#chart8,
+	#chart9 {
+		grid-row: auto;
+		grid-column: auto;
+	}
+
+	#chart1,
+	#chart2,
+	#chart3,
+	#chart4,
+	#chart5,
+	#chart6 {
+		grid-column: span 2;
+	}
+
+	#chart7 {
+		grid-area: 3 / 2 / span 2 / span 2;
+	}
+
+	#chart8 {
+		grid-area: 3 / 4 / span 1 / span 2;
+	}
+
+	#chart9 {
+		grid-area: 4 / 4 / span 1 / span 2;
+	}
+}
+@media only screen and (min-width: 1556px) {
+	.dashboard-container {
+		max-width: 1556px;
+		margin: 0 auto;
+	}
+}

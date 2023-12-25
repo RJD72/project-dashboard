@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+
+		<!-- CSS for Navbar & Footer (copied) -->
+		<link rel="stylesheet" href="../styles/global-nav.css" />
+		<link rel="stylesheet" href="../styles/buttons-cards-footer.css" />
+		<link rel="stylesheet" href="./links.css" />
+		<link rel="stylesheet" href="./typography.css" />
+		<title>Typography</title>
+		<script src="./typography.js"></script>
+		<script src="./loadContent.js"></script>
+	</head>
+	<body>
+		<!-- Header/Navbar-->
+		<nav class="navbar navbar-expand-lg colourNeutralCool">
+			<div class="container">
+				<div class="d-flex justify-content-start align-items-center">
+					<a class="navbar-brand airline-logo" href="../index.html"
+						><img src="../assets/starwing.png" alt="Airline Star Wing"
+					/></a>
+
+					<h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+				</div>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Typography</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../colour/colour.html">Colour</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../page_layout/page_layout.html">Page Layouts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../data_vis/dataVisualization.html">Data Visualization</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="componentsDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+							>Components</a
+						>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="../buttons/buttons.html">Buttons</a></li>
+							<li><a class="dropdown-item" href="../cards/cards.html">Cards</a></li>
+							<li><a class="dropdown-item" href="../fields/fields.html">Fields</a></li>
+							<li><a class="dropdown-item" href="../footer/footer.html">Footer</a></li>
+							<li><a class="dropdown-item" href="../heading/heading.html">Header</a></li>
+							<li><a class="dropdown-item" href="../navigation/navigation.html">Navigation</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<h1 class="starwing-main-heading">Typography</h1>
+		<h2 class="starwing-sub-heading">Aa</h2>
+
+		<div class="starwing-grid-container">
+			<div class="starwing-grid-item">
+				<h2>Typeface</h2>
+				<p>Roboto, Sans-Serif.</p>
+			</div>
+			<div class="starwing-grid-item">
+				<h2>Weights</h2>
+				<p>We use "Regular", "SemiBold", and "Bold".</p>
+			</div>
+			<div class="starwing-grid-item">
+				<h2>Symbols</h2>
+				<p>
+					When we need to include trademarks or other symbols into copy, include the symbol without the
+					&lt;sup&gt; tag.
+				</p>
+				<br />
+				<p>
+					With &lt;sup&gt; tag: <a href="#">Sign up for<span class="sup-tag">Starwing®</span> Rewards</a>
+				</p>
+				<br />
+				<p>Without &lt;sup&gt; tag: <a href="#">Sign up for Starwing® Rewards</a></p>
+			</div>
+		</div>
+
+		<div class="content-wrapper-section1">
+			<div class="starwing-gridItem starwing-mb5">
+				<h2 class="starwing-heading starwing-text-md starwing-mb2" tabindex="-1">Roboto, Sans-Serif</h2>
+				<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb4" />
+				<div class="scroll-content">
+					<p class="starwing-text-xxs starwing-mb3">
+						This is xxs text.<span class="starwing-text-semibold"> This is xxs semibold text.</span
+						><span class="starwing-text-bold"> This is xxs bold text.</span>
+					</p>
+					<p class="starwing-text-xs starwing-mb3">
+						This is xs text.<span class="starwing-text-semibold"> This is xs semibold text.</span
+						><span class="starwing-text-bold"> This is xs bold text.</span>
+					</p>
+					<p class="starwing-text-sm starwing-mb3">
+						This is sm text.<span class="starwing-text-semibold"> This is sm semibold text.</span
+						><span class="starwing-text-bold"> This is sm bold text.</span>
+					</p>
+					<p class="starwing-text-md starwing-mb3">
+						This is md text.<span class="starwing-text-semibold"> This is md semibold text.</span
+						><span class="starwing-text-bold"> This is md bold text.</span>
+					</p>
+					<p class="starwing-text-lg starwing-mb3">
+						This is lg text.<span class="starwing-text-semibold"> This is lg semibold text.</span
+						><span class="starwing-text-bold"> This is lg bold text.</span>
+					</p>
+					<p class="starwing-text-xl starwing-mb3">
+						This is xl text.<span class="starwing-text-semibold"> This is xl semibold text.</span
+						><span class="starwing-text-bold"> This is xl bold text.</span>
+					</p>
+					<p class="starwing-text-xxl starwing-mb0">
+						This is xxl text.<span class="starwing-text-semibold"> This is xxl semibold text.</span
+						><span class="starwing-text-bold"> This is xxl bold text.</span>
+					</p>
+				</div>
+				<!-- Scrollable Text Box -->
+				<div class="larger-scrolling-text-box">
+					<div class="scroll-content">
+						<code>
+							&lt;p class="starwing-text-xxs starwing-mb3"&gt;This is xxs text.&lt;span
+							class="starwing-text-semibold"&gt; This is xxs semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is xxs bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-xs starwing-mb3"&gt;This is xs text.&lt;span
+							class="starwing-text-semibold"&gt; This is xs semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is xs bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-sm starwing-mb3"&gt;This is sm text.&lt;span
+							class="starwing-text-semibold"&gt; This is sm semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is sm bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-md starwing-mb3"&gt;This is md text.&lt;span
+							class="starwing-text-semibold"&gt; This is md semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is md bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-lg starwing-mb3"&gt;This is lg text.&lt;span
+							class="starwing-text-semibold"&gt; This is lg semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is lg bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-xl starwing-mb3"&gt;This is xl text.&lt;span
+							class="starwing-text-semibold"&gt; This is xl semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is xl bold text.&lt;/span&gt;&lt;/p&gt; &lt;p
+							class="starwing-text-xxl starwing-mb0"&gt;This is xxl text.&lt;span
+							class="starwing-text-semibold"&gt; This is xxl semibold text.&lt;/span&gt;&lt;span
+							class="starwing-text-bold"&gt; This is xxl bold text.&lt;/span&gt;&lt;/p&gt;
+						</code>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="starwing-grid-item starwing-md-size12of12 starwing-mb5">
+			<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb4" />
+			<h2 class="starwing-sb-heading starwing-text-md starwing-mb3" tabindex="-1">Illustrative Examples</h2>
+			<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb3" />
+		</div>
+
+		<div class="content-wrapper-section2" id="content-section">
+			<div class="starwing-grid starwing-grid--wideGutter">
+				<div class="starwing-gridItem starwing-md-size3of12 starwing-mb9 starwing-mt6">
+					<h4
+						class="starwing-sb-heading starwing-text-xxs starwing-mb4 starwing-text-bold starwing-text-upper starwing-color-textBlackSoft"
+						tabindex="-1"
+					>
+						Specifics, Activity &amp; Expression
+					</h4>
+					<p class="starwing-mb2">
+						Consistent typography in the Starwing brand context can effectively communicate intricate
+						information, prompt action, and infuse a distinctive voice into diverse situations. Effective
+						typography ensures the clear delivery of valuable information and accessible user actions while
+						maintaining a user-friendly experience, minimizing cognitive overload, and eliminating
+						unnecessary complexity in interactions.
+					</p>
+					<!-- Buttons to load external content -->
+					<!-- <button id="loadEffectiveTypography">Effective Typography</button> -->
+					<!-- <button id="loadTypographyEssentials">Typography Essentials</button> -->
+					<a
+						class="starwing-sb-button starwing-sb-button--default starwing-mb2"
+						href="Effective Typography.html"
+						style="margin-left: 10px"
+					>
+						<span class="starwing-sb-button-text">Effective Typography</span>
+					</a>
+					<a
+						class="starwing-sb-button starwing-sb-button--default starwing-mb2"
+						href="Typography Essentials.html"
+						style="margin-left: 10px"
+					>
+						<span class="starwing-sb-button-text">Typography Essentials</span>
+					</a>
+					<button id="closeButton" style="display: none">Close</button>
+					<!-- Add this line -->
+					<div id="contentContainer">
+						<!-- Existing content (Typography.html) goes here -->
+					</div>
+
+					<div id="loadedContentContainer" style="display: none">
+						<!-- Loaded content (Effective Typography.html) goes here -->
+					</div>
+
+					<div class="starwing-gridItem starwing-md-size9of12 starwing-mb9 starwing-mt6">
+						<div class="starwing-screen-example-laptop">
+							<img
+								alt="Typography being used in a laptop UI screenshot of Order feature."
+								src="images/MP4Q0mz.webp"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="starwing-grid-item starwing-md-size12of12 starwing-mb5">
+				<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb4" />
+				<h2 class="starwing-sb-heading starwing-text-md starwing-mb3" tabindex="-1">Ongoing Organization</h2>
+				<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb3" />
+			</div>
+
+			<div class="content-wrapper-section3">
+				<div class="starwing-grid starwing-grid--wideGutter">
+					<div class="starwing-gridItem starwing-md-size3of12 starwing-mb9 starwing-mt6">
+						<h4
+							class="starwing-sb-heading starwing-text-xxs starwing-mb4 starwing-text-bold starwing-text-upper starwing-color-textBlackSoft"
+							tabindex="-1"
+						>
+							Consistent Arrangement
+						</h4>
+						<p class="starwing-mb2">
+							Effective typography guides users by establishing a consistent structure and a clear,
+							understandable flow, regardless of the language used. This content will delve into specific
+							details regarding the showcased illustrations on the right side.
+						</p>
+						<a
+							class="starwing-sb-button starwing-sb-button--default starwing-mr3 starwing-mb2"
+							href="typeface.html"
+						>
+							<span class="starwing-sb-button-text">Typeface</span>
+						</a>
+						<a
+							class="starwing-sb-button starwing-sb-button--default starwing-mb2"
+							href="illustrations.html"
+							style="margin-left: 10px"
+						>
+							<span class="starwing-sb-button-text">Illustrations</span>
+						</a>
+					</div>
+					<div class="starwing-gridItem starwing-md-size9of12 starwing-mb9 starwing-mt6">
+						<div class="starwing-screen-example-laptop">
+							<img
+								alt="Typography being used in a laptop UI screenshot of Order feature."
+								src="images/1_ixGmwiBtnhwWqBAOi2AJIQ.png"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="starwing-grid-item starwing-md-size12of12 starwing-mb5">
+				<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb4" />
+				<h2 class="starwing-sb-heading starwing-text-md starwing-mb3" tabindex="-1">Application</h2>
+				<hr aria-hidden="true" class="starwing-sb-rule starwing-pt1 starwing-mb3" />
+			</div>
+
+			<div class="content-wrapper-section4">
+				<div class="left-column">
+					<h4 class="heading">SO WHAT’S NEXT?</h4>
+					<p class="paragraph">
+						Incorporating typography within our application follows two approaches in the Starwing brand.
+						For headings and other non-body text elements, we employ a versatile component known as
+						"<code>&lt;Heading&gt;</code>". Alternatively, we apply CSS utilities to format text.
+					</p>
+					<a
+						class="starwing-sb-button starwing-sb-button--default starwing-mr3 starwing-mb2"
+						href="Headings.html"
+					>
+						<span class="starwing-sb-button-text">Headings</span>
+					</a>
+					<a
+						class="starwing-sb-button starwing-sb-button--default starwing-mb2"
+						href="Typestyling.html"
+						style="margin-left: 10px"
+					>
+						<span class="starwing-sb-button-text">Type Styling</span>
+					</a>
+				</div>
+				<div class="right-column">
+					<div class="screen-example">
+						<img
+							alt="Typography in a laptop UI"
+							src="images/635232a18a13d770391a4531_Header navigations.png"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="starwing-footer colourNeutralWarm">
+			<div class="terms">
+				<a href="#"><p>Privacy Statement</p></a>
+				<a href="#"><p>Terms of Use</p></a>
+				<a href="#"><p>Web Accessibility</p></a>
+				<p>
+					<small>&copy;2023 Star Wing. All rights reserved</small>
+				</p>
+			</div>
+			<div class="components">
+				<a href="../buttons/buttons.html"><p>Buttons</p></a>
+				<a href="../cards/cards.html"><p>Cards</p></a>
+				<a href="../fields/fields.html"><p>Fields</p></a>
+				<a href="../footer/footer.html"><p>Footer</p></a>
+				<a href="../heading/heading.html"><p>Header</p></a>
+				<a href="../navigation/navigation.html"><p>Navigation</p></a>
+			</div>
+			<div class="social-media">
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		</footer>
+	</body>
+</html>

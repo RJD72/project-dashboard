@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global-nav.css" />
+    <link rel="stylesheet" href="./fields.css" />
+
+    <script src="./fields.js"></script>
+    <title>Fields</title>
+  </head>
+  <body onload="liveCode(event, 'text')">
+    <nav class="navbar navbar-expand-lg colourNeutralCool">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <a class="navbar-brand airline-logo" href="../../index.html"
+            ><img src="../assets/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+        </div>
+        <ul class="navbar-nav justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../colour/colour.html">Colour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page_layout/page_layout.html"
+              >Page Layouts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data_vis/dataVisualization.html"
+              >Data Visualization</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="componentsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Components</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../buttons/buttons.html"
+                  >Buttons</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../cards/cards.html">Cards</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Fields</a></li>
+              <li>
+                <a class="dropdown-item" href="../footer/footer.html">Footer</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../heading/heading.html"
+                  >Header</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../navigation/navigation.html"
+                  >Navigation</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h2 class="heading-font my-3">Input Fields</h2>
+      <div class="layout-tab">
+        <button
+          class="layout-tab-link active"
+          onclick="liveCode(event, 'text')"
+        >
+          Text Input
+        </button>
+        <button
+          class="layout-tab-link"
+          onclick="liveCode(event, 'text-button')"
+        >
+          Text Input with Button
+        </button>
+        <button class="layout-tab-link" onclick="liveCode(event, 'text-help')">
+          Text Input with Help
+        </button>
+        <button class="layout-tab-link" onclick="liveCode(event, 'validation')">
+          Validation Feedback
+        </button>
+      </div>
+      <section>
+        <div id="element" class="fields-layout"></div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col" id="layout-notes"></div>
+          <div class="col">
+            <textarea
+              name="live-code-editor"
+              id="live-text"
+              cols="75"
+              rows="10"
+              class="code-box"
+              onchange="liveCode()"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+      <!-- prettier-ignore-->
+      <div class="embedded-code">
+<div id="text-code">
+	<div class="row fields-container">
+		<div class="col-3">
+			<div class="input-group me-2">
+				<label>First Name</label>
+				<input type="text" placeholder="" aria-label="Not Required" class="field" />
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="input-group me-2">
+				<label class="required">Last Name</label>
+				<input type="text" placeholder="" aria-label="Required" class="field" />
+			</div>
+		</div>
+	</div>
+</div>
+<div id="text-notes">
+	<h3 class="heading-font">Notes</h3>
+	<p>
+		Text inputs are paired with a corresponding <code>label</code> element, indicating what kind of input is required. There is only a <code>bottom-border</code> property for input fields, with a <code>:focus</code> peudo-class following the brand colours. 
+	</p>
+	<p>When an input field is required, using the <code>required</code> class on the label will prompt an <code>::after</code> pseudoi-class, displaying the <i>*Required</i> label.</p>
+</div>
+<div id="text-button-code">
+	<div class="row fields-container">
+		<div class="col-3">
+			<div class="input-group me-2">
+				<label>Username</label>
+				<div class="input-with-button">
+					<input type="text" placeholder="" aria-label="Not Required" class="field" />
+					<button class="starwing-btn" type="button">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+<div id="text-button-notes">
+	<h3 class="heading-font">Notes</h3>
+	<p>
+		Text inputs with buttons are paired with a corresponding <code>label</code> element to indicate the purpose of the input field. To align the input and button inline, a <code>display: flex</code> style is applied to the parent container with the class <code>input-with-button</code>. This ensures that the input and button appear on the same line.
+	</p>
+	<p>Clicking the button triggers a <code>:active</code> style, causing a color change to indicate the button's active state.</p>	
+</div>
+<div id="text-help-code">
+	<div class="row fields-container">
+		<div class="col-3">
+			<div class="input-group me-2">
+				<label>Email</label>
+				<input type="text" placeholder="" aria-label="Not Required" class="field" />
+				<div class="help-text">Please enter a valid email address.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="text-help-notes">
+	<h3 class="heading-font">Notes</h3>
+	<p>
+		Text inputs with help information are designed to provide additional guidance to users. A <code>label</code> element is used to describe the input field's purpose. Help information is displayed in a <code>.help-text</code> element beneath the input field. When the input field receives focus, the help text eases into view using a transition effect.
+	</p>
+	<p>This transition effect enhances the user experience by smoothly revealing the help information when needed.</p>
+</div>
+<div id="validation-code">
+	<div class="row fields-container">
+		<div class="col-3">
+			<div class="input-group me-2">
+				<label class="required">Password</label>
+				<input type="text" placeholder="" aria-label="Required" class="field error" />
+				<div class="error-message">Password must be at least 8 characters.</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="validation-notes">
+	<h3 class="heading-font">Notes</h3>
+	<p>
+		Validation error text inputs are used to indicate input errors on required fields. A <code>label</code> element is employed to convey the input field's importance. When an error occurs, an <code>.error</code> class is added to the input field to trigger the error state. The error message is displayed in the <code>.error-message</code> element beneath the input field using our <code>--colourRedError</code> colour. The bottom-border of the input field is also styled in this colour.
+	</p>
+	<p>For demonstration purposes, the error state can be simulated by manually adding the <code>.error</code> class to the input field. In practice, this class is typically applied dynamically when validation errors occur.</p>
+</div>
+			</div>
+    </div>
+    <!-- Footer -->
+    <footer class="starwing-footer colourNeutralWarm mt-3">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="components">
+        <a href="../buttons/buttons.html"><p>Buttons</p></a>
+        <a href="../cards/cards.html"><p>Cards</p></a>
+        <a href="#"><p>Fields</p></a>
+        <a href="../footer/footer.html"><p>Footer</p></a>
+        <a href="../heading/heading.html"><p>Header</p></a>
+        <a href="../navigation/navigation.html"><p>Navigation</p></a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

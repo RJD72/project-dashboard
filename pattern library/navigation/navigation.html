@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global-nav.css" />
+    <link rel="stylesheet" href="./nav-style.css" />
+    <title>Navigation</title>
+    <script src="./navigation.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg colourNeutralCool">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <a class="navbar-brand airline-logo" href="../../index.html"
+            ><img src="../assets/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../colour/colour.html">Colour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page_layout/page_layout.html"
+              >Page Layouts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data_vis/dataVisualization.html"
+              >Data Visualization</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="componentsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Components</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../buttons/buttons.html"
+                  >Buttons</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../cards/cards.html">Cards</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../fields/fields.html">Fields</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../footer/footer.html">Footer</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../heading/heading.html"
+                  >Header</a
+                >
+              </li>
+              <li><a class="dropdown-item" href="#">Navigation</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <h2 class="heading-font">Navigation</h2>
+      <hr />
+      <h5 class="heading-font">Header Navigation Example 1</h5>
+      <div id="nav-1"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            The navigation is an important component to any application. A
+            navigation is used to enable the user’s to navigate through a
+            website and it is important that the navigation is coherent and
+            functional. Adding classes to the website's navigation allows the
+            developer to add styles like position, colours and responsiveness to
+            the navigation. The class
+            <code>navbarExampleOne</code> is there to add styling to this
+            specific element. The class <code>nav-links-example-one</code> is to
+            control the styling of the navigation links.
+          </p>
+        </div>
+        <div id="code-container" class="nav-code-box">
+          <textarea
+            id="live-text-nav-1"
+            name="live-text"
+            rows="10"
+            cols="60"
+            class="code-box"
+          >
+<nav>
+  <div class="navbar-example">
+    <a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+    <ul class="nav-links-example">
+      <li><a href="#">Find Flights</a></li>
+      <li><a href="#">Travel Information</a></li>
+      <li><a href="#">Book Travel</a></li>
+      <li><a href="#">Manage Flights</a></li>
+      <li><a href="#">Our Company</a></li>
+    </ul>
+  </div>
+</nav>
+
+          </textarea>
+        </div>
+      </div>
+
+      <h5 class="heading-font">Header Navigation Example 2</h5>
+      <div id="nav-2"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            For larger more complex websites there is a search function that is
+            added to the navigation. The search function consists of a
+            <code>div</code> with the class <code>search-container</code> and an
+            input element with the class <code>search-input</code> and
+            <code>search-input:focus</code>. The
+            <code>search-container</code> element in this example is used for
+            the positioning of the input element. The input element with the
+            class <code>search-input</code> is used for the actual styling of
+            the element like colours and borders. The element class also has
+            <code>search-input:focus</code> which is used to style the input
+            element when it is focused.
+          </p>
+        </div>
+        <div id="code-container" class="nav-code-box">
+          <textarea
+            id="live-text-nav-2"
+            name="live-text"
+            rows="10"
+            cols="60"
+            class="code-box"
+          >
+<nav>
+  <div class="navbar-example">
+
+    <a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+
+    <ul class="nav-links-example">
+      <li><a href="#">Find Flights</a></li>
+      <li><a href="#">Travel Information</a></li>
+      <li><a href="#">Book Travel</a></li>
+      <li><a href="#">Manage Flights</a></li>
+      <li><a href="#">Our Company</a></li>
+    </ul>
+
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search">
+    </div>
+  </div>
+</nav>
+                </textarea
+          >
+        </div>
+      </div>
+
+      <hr />
+    </div>
+
+    <div class="container my-5">
+      <h2 class="heading-font">Sub Navigation</h2>
+      <hr />
+      <h5 class="heading-font">Header Sub Navigation Example 1</h5>
+      <div id="nav-3"></div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            For a more complex website, we added a sub navigation bar to the top
+            of the main navigation. The div with the class
+            <code>green-bar</code> represents the sub navigation section that
+            goes above the main navigation and contains the language dropdown,
+            the Help/FAQ link, a phone number link and a Login/Register link.
+          </p>
+        </div>
+        <div id="code-container" class="nav-code-box">
+          <textarea
+            id="live-text-nav-3"
+            name="live-text"
+            rows="10"
+            cols="60"
+            class="code-box"
+          >
+<div class="green-bar">
+  <div class="left-links">
+    <div class="language-dropdown">
+      <button class="nav-dropbtn">Languages<span>&#9662;</span></button>
+      <div class="dropdown-content">
+        <a href="#">English</a>
+        <a href="#">Spanish</a>
+        <a href="#">French</a>
+      </div>
+    </div>
+    <a href="#" class="help-faq-link">Help/FAQ</a>
+  </div>
+  <div class="right-links">
+    <a href="#" class="call-to-book-link">&#9742; Call To Book</a>
+    <a href="#" class="login-register-link">Login/Register</a>
+  </div>
+</div>
+<nav>  
+  <div class="navbar-example">
+    <a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+    <ul class="nav-links-example">
+      <li><a href="#">Find Flights</a></li>
+      <li><a href="#">Travel Information</a></li>
+      <li><a href="#">Book Travel</a></li>
+      <li><a href="#">Manage Flights</a></li>
+      <li><a href="#">Our Company</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search">
+    </div>
+  </div>
+</nav>
+                        </textarea
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h5 class="heading-font">Header Sub Navigation Example 2</h5>
+      <div id="nav-4"></div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            For this sub navigation we’ve added a search input, this for when
+            the website will become more complex when the user registers for an
+            account. We’ve organized the sub navigation into left and right
+            links. A div with the class name <code>left-links</code> and a div
+            with the class name <code>right-links</code>.
+          </p>
+        </div>
+        <div id="code-container" class="nav-code-box">
+          <textarea
+            id="live-text-nav-4"
+            name="live-text"
+            rows="10"
+            cols="60"
+            class="code-box"
+          >
+<div class="green-bar">
+  <div class="left-links">
+    <div class="language-dropdown">
+      <button class="nav-dropbtn">Languages<span>&#9662;</span></button>
+      <div class="dropdown-content">
+        <a href="#">English</a>
+        <a href="#">Spanish</a>
+        <a href="#">French</a>
+      </div>
+    </div>
+    <a href="#" class="help-faq-link">Help/FAQ</a>
+  </div>
+  <div class="right-links">
+    <div class="search-container-sub-nav">
+      <input type="text" class="search-input-sub-nav" placeholder="Search">
+    </div>
+    <a href="#" class="call-to-book-link">&#9742; Call To Book</a>
+    <a href="#" class="login-register-link">Account</a>
+  </div>
+</div>
+<nav>
+  <div class="navbar-example">
+    <a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+    <ul class="nav-links-example">
+      <li><a href="#">Find Flights</a></li>
+      <li><a href="#">Travel Information</a></li>
+      <li><a href="#">Book Travel</a></li>
+      <li><a href="#">Manage Flights</a></li>
+      <li><a href="#">Our Company</a></li>
+    </ul>
+  </div>
+</nav>
+     </textarea
+          >
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="container my-5">
+      <h2 class="heading-font">Mobile Menu</h2>
+      <hr />
+      <h5 class="heading-font">Mobile Navigation Examples</h5>
+      <div class="custom-mobile-menu" id="nav-5"></div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            This navigation is mobile responsive meaning that it is used when
+            the website gets viewed on smaller screens like iPhones or tablets
+            and it is functional and visually coherent. It has a div with the
+            class <code>mobile-menu-icon</code> which holds three bars that
+            represent the mobile menu toggle button. The
+            <code>onclick</code> attribute is used to trigger a JavaScript
+            function called <code>toggleMobileMenu()</code>.
+          </p>
+        </div>
+        <div id="code-container" class="nav-code-box">
+          <textarea
+            id="live-text-nav-5"
+            name="live-text"
+            rows="10"
+            cols="60"
+            class="code-box"
+          >
+<nav>
+  <div class="navbar-example">
+    <a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+
+    <div class="mobile-menu">
+      <div class="mobile-menu-icon" id="mobile-menu-icon" onclick="toggleMobileMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <ul class="nav-links-mobile">
+      <li><a href="#mobile-menu-icon">Find Flights</a></li>
+      <li><a href="#mobile-menu-icon">Travel Information</a></li>
+      <li><a href="#mobile-menu-icon">Book Travel</a></li>
+      <li><a href="#mobile-menu-icon">Manage Flights</a></li>
+      <li><a href="#mobile-menu-icon">Our Company</a></li>
+      <li><a href="#mobile-menu-icon" class="close-button" onclick="closeMobileMenu()">Close Menu</a></li>
+    </ul>
+  </div>
+</nav>
+                </textarea
+          >
+        </div>
+      </div>
+
+      <hr />
+    </div>
+    <footer class="starwing-footer colourNeutralWarm">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="components">
+        <a href="../buttons/buttons.html"><p>Buttons</p></a>
+        <a href="../cards/cards.html"><p>Cards</p></a>
+        <a href="../fields/fields.html"><p>Fields</p></a>
+        <a href="../footer/footer.html"><p>Footer</p></a>
+        <a href="../heading/heading.html"><p>Header</p></a>
+        <a href="#"><p>Navigation</p></a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

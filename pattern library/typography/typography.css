@@ -1,0 +1,400 @@
+/* Style the header */
+.starwing-header {
+	background-color: var(--colourNeutralWarm);
+	color: var(--colourBlack);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+
+/* Style the logo and name */
+.starwing-logo-name {
+	display: flex;
+	align-items: center;
+}
+
+.starwing-logo-name img {
+	width: 100px;
+	height: auto;
+	margin-right: 10px;
+}
+
+/* Style the navigation menu items as buttons */
+.starwing-menu-list li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.starwing-menu-list li:last-child {
+	margin-right: 0;
+}
+
+.starwing-menu-list li a.starwing-sb-button {
+	color: var(--colourTextBlack); /* Set text color */
+	text-decoration: none;
+	transition: color 0.3s, background-color 0.3s, border-color 0.3s; /* Add transitions for color, background, and border changes */
+	padding: 5px 10px; /* Add padding for better visual appearance */
+	border: 2px solid var(--colourGreenStarWing); /* Add a border */
+	border-radius: 4px; /* Add rounded corners */
+}
+
+.starwing-menu-list li a.starwing-sb-button:hover {
+	color: var(--colourGreenStarWing); /* Change text color on hover */
+	background-color: var(--colourBlack); /* Change background color on hover */
+	border-color: var(--colourBlack); /* Change border color on hover */
+}
+
+.starwing-main-heading,
+.starwing-sub-heading {
+	position: relative; /* Add position relative to create a reference for the pseudo-element */
+	font-size: 28px; /* Reduced the font size */
+	background-color: var(--colourGreenStarWing); /* Green background color */
+	color: var(--colourBlack); /* Text color */
+	padding: 10px 20px; /* Reduced padding for a smaller section */
+	margin: 0;
+	font-family: "Varela", sans-serif; /* Use Varela font for headings */
+	font-weight: bold; /* Make the text bold */
+}
+
+.starwing-sub-heading {
+	font-size: 96px; /* Reduced the font size to make it smaller */
+	margin-bottom: 0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 2px; /* Reduced stroke width for a thinner outline */
+	-webkit-text-stroke-color: var(--colourBlack);
+}
+
+.starwing-menu-list li a.starwing-sb-button {
+	font-family: "Varela", sans-serif; /* Use Varela font for menu buttons */
+}
+
+.starwing-main-heading::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: var(--colourBlack);
+	bottom: -4px;
+	left: 0;
+	z-index: 1; /* Add a higher z-index value */
+}
+
+/* Basic styles for the grid container and items */
+.starwing-grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	padding: 30px;
+}
+/* Add shadow and padding to each grid item */
+.starwing-grid-item {
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+	border-radius: 5px; /* Rounded corners */
+	background-color: var(--colourWhite); /* White background */
+}
+
+/* Style the p element */
+.starwing-grid-item p {
+	margin: 0; /* Remove default margin */
+	line-height: 1.5; /* Adjust line height for better readability */
+}
+
+/* Style the sup element within p */
+.starwing-grid-item p sup {
+	font-size: 14px; /* Adjust the font size for sup elements */
+}
+/* Style links within .starwing-grid-item */
+.starwing-grid-item a {
+	color: var(--colourBlack); /* Set link color to the primary Starwing color */
+	text-decoration: underline; /* Add underline to links */
+	font-weight: bold; /* Make the links bold */
+}
+
+/* Hover effect for links */
+.starwing-grid-item a:hover {
+	color: var(--colourGreenStarWing); /* Change link color on hover to the secondary Starwing color */
+}
+
+/* ... Your existing CSS ... */
+
+/* Updated CSS for Larger Scrollable Text Box */
+.larger-scrolling-text-box {
+	max-height: 80vh;
+	width: 300px;
+	overflow: auto;
+	top: 50%;
+	right: 0px; /* Adjust the right value to control its position */
+	transform: translateY(-50%);
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: var(--colourTextBlack);
+	font-family: "Courier New", Courier, monospace;
+	color: var(--colourRedPastel);
+	scrollbar-width: thin;
+	scrollbar-color: var(--colourGreenStarWing) transparent;
+}
+
+/* Style the scrollbar (optional) */
+.larger-scrolling-text-box::-webkit-scrollbar {
+	width: 8px;
+}
+
+.larger-scrolling-text-box::-webkit-scrollbar-thumb {
+	background-color: var(--colourGreenStarWing);
+	border-radius: 4px;
+}
+
+/* Updated CSS for starwing classes */
+
+.starwing-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.starwing-grid-item {
+	flex: 1;
+	min-width: 0;
+}
+
+.starwing-heading.starwing-text-md.starwing-mb2 {
+	font-size: 2em; /* Double the font size */
+}
+
+.starwing-rule {
+	border-top: 1px solid #000;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/* Content Wrappers */
+.content-wrapper-section1 {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px;
+	height: 650px;
+}
+
+.content-wrapper-section2 {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: -20px;
+}
+
+.content-wrapper-section3 {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px;
+	/* padding-bottom: 20px;
+    margin-bottom: -20px; */
+}
+
+.content-wrapper-section4 {
+	width: 100%;
+	overflow: hidden;
+	padding: 20px;
+	/* padding-bottom: 20px;
+    margin-bottom: -20px; */
+}
+
+/* Adjust other text styles as needed */
+.starwing-text-xxs {
+	font-size: 1rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-xs {
+	font-size: 1.125rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-sm {
+	font-size: 1.25rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-md {
+	font-size: 1.5rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-lg {
+	font-size: 1.75rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-xl {
+	font-size: 2rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-xxl {
+	font-size: 2.25rem; /* Increase the font size as needed */
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-text-semibold {
+	font-weight: 600;
+}
+
+.starwing-text-bold {
+	font-weight: bold;
+}
+
+.starwing-mb2 {
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-mb3 {
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-mb4 {
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-mb5 {
+	margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.starwing-pt1 {
+	padding-top: 0.25rem;
+}
+
+/* Add more styles and overrides as required */
+
+/* Horizontal rule style */
+.starwing-sb-rule {
+	width: 100%;
+	margin: 0;
+	border: none;
+	border-top: 1px solid var(--colourBlack); /* Adjust the color and style as needed */
+}
+
+/* Heading style */
+.starwing-sb-heading {
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.58);
+	margin-bottom: 1rem;
+}
+
+/* Paragraph style */
+.starwing-mb2 {
+	margin-bottom: 0.5rem;
+}
+
+/* Laptop screen example */
+.starwing-screen-example-laptop img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Grid styles */
+.starwing-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.starwing-gridItem {
+	flex: 1;
+	min-width: 0;
+	/* padding-bottom: 1500px; */
+}
+
+/* Screen example image styles */
+.starwing-screen-example-phone img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Adjust margins and padding as needed */
+.starwing-mb2 {
+	margin-bottom: 0.5rem;
+}
+
+.starwing-mb3 {
+	margin-bottom: 1rem;
+}
+
+.starwing-mb4 {
+	margin-bottom: 1.5rem;
+}
+
+.starwing-mb9 {
+	margin-bottom: 2rem;
+}
+
+.starwing-mt3 {
+	margin-top: 0.75rem;
+}
+
+/* Add more styles and overrides as required */
+
+/* Button styles */
+.starwing-sb-button {
+	color: var(--colourTextBlack);
+	text-decoration: none;
+	transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+	padding: 5px 10px;
+	border: 2px solid var(--colourGreenStarWing);
+	border-radius: 4px;
+}
+
+.starwing-sb-button:hover {
+	color: var(--colourGreenStarWing);
+	background-color: var(--colourBlack);
+	border-color: var(--colourBlack);
+}
+
+/* Add margin to the paragraph */
+.starwing-gridItem.starwing-md-size3of12.starwing-mb9.starwing-mt6 p.starwing-mb2 {
+	margin-bottom: 20px; /* Adjust the value to control the space */
+}
+
+.left-column {
+	float: left;
+	width: 60%;
+}
+
+.right-column {
+	float: right;
+	width: 40%;
+}
+
+.heading {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.paragraph {
+	margin-bottom: 15px;
+}
+
+.screen-example img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Add margin or padding to buttons in sections other than the navigation */
+.starwing-sb-button--default {
+	margin-bottom: 20px; /* You can adjust the value to your preference */
+}
+
+/* To prevent margin/padding on buttons in the navigation */
+.starwing-menu .starwing-sb-button--default {
+	margin-bottom: 0;
+}
+/* Reduce the size of the image */
+.starwing-screen-example-laptop img {
+	max-width: 80%; /* Adjust the value as needed */
+	height: auto;
+	display: block;
+	margin: 0 auto; /* Center the image horizontally */
+}

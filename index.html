@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarWing Data Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS for Navbar & Footer (copied) -->
+    <link rel="stylesheet" href="styles/buttons-cards-footer.css" />
+    <link rel="stylesheet" href="styles/global-nav.css" />
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/queries.css" />
+    <!-- d3js -->
+    <script src="http://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <!-- Header/Navbar-->
+    <nav class="navbar navbar-lg colourNeutralCool">
+      <div class="container">
+        <div class="nav-elements">
+          <a class="navbar-brand airline-logo" href="./images/starwing.png"
+            ><img src="./images/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wing's <br />Dashboard</h1>
+
+          <button class="starwing-btn colourGreenStarWing">
+            <a href="/pattern library/page_layout/page_layout.html"
+              >Pattern Library</a
+            >
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="dashboard-container">
+      <!-- Chart 1 -->
+      <div class="chart" id="chart1">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 2 -->
+      <div class="chart" id="chart2">
+        <!-- D3.js chart will be injected here -->
+        <svg id="chart2-svg"></svg>
+      </div>
+      <!-- Chart 3 -->
+      <div class="chart" id="chart3">
+        <!-- Move the dropdown to the top -->
+        <div id="dropdown-container" class="starwing-dropdown">
+          <select
+            name="categories"
+            id="category-select"
+            class="starwing-dropbtn colourGreenStarWing"
+          >
+            <option value="Inflight wifi service">Inflight wifi service</option>
+            <option value="Food and drink">Food and drink</option>
+            <option value="Seat comfort">Seat comfort</option>
+            <option value="Inflight entertainment">
+              Inflight entertainment
+            </option>
+            <option value="Leg room service">Leg room service</option>
+          </select>
+        </div>
+      </div>
+      <!-- Chart  4-->
+      <div class="chart" id="chart4">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 5 -->
+      <div class="chart" id="chart5">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 6 -->
+      <div class="chart" id="chart6">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 7 -->
+      <div class="chart" id="chart7">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 8 -->
+      <div class="chart" id="chart8">
+        <!-- D3.js chart will be injected here -->
+      </div>
+      <!-- Chart 9 -->
+      <div class="chart" id="chart9">
+        <!-- D3.js chart will be injected here -->
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="starwing-footer colourNeutralWarm">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+    <!--Chart 1 D3.js-->
+    <script src="./chartOne.js"></script>
+    <!--Chart 2 D3.js-->
+    <script src="./chartTwo.js"></script>
+    <!--Chart 3 D3.js-->
+    <script src="./chartThree.js"></script>
+    <!--Chart 4 D3.js-->
+    <script src="./chartFour.js"></script>
+    <!--Chart 5 D3.js-->
+    <script src="./chartFive.js"></script>
+    <!--Chart 6 D3.js-->
+    <script src="./chartSix.js"></script>
+    <!--Chart 7 D3.js -->
+    <script src="./chartSeven.js"></script>
+    <!--Chart 8 D3.js-->
+    <script src="./chartEight.js"></script>
+    <!--Chart 9 D3.js-->
+    <script src="./chartNine.js"></script>
+  </body>
+</html>

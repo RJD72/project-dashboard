@@ -1,0 +1,284 @@
+/* Tabs */
+.layout-tab {
+	overflow: hidden;
+}
+
+.layout-tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.layout-tab button:hover {
+	background-color: var(--colourNeutralCool);
+}
+
+.layout-tab button.active {
+	background-color: var(--colourNeutralWarm);
+}
+
+/* Notes */
+#layout-notes p {
+	margin: 25px 0;
+}
+
+/* UI Element*/
+.fields-layout,
+.layout {
+	background-color: #fff;
+	overflow: auto;
+	width: 1292px;
+}
+.layout {
+	box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fields-layout {
+	margin: 3rem 0;
+}
+
+.hbf_element {
+	padding: 20px;
+	padding-bottom: 0;
+}
+
+header.hbf_element {
+	padding: 1px 20px;
+}
+
+.navbar {
+	padding: 0;
+}
+
+a.navbar-brand {
+	padding: 0;
+}
+
+.logo {
+	max-width: 440px;
+	max-height: 100px;
+	margin: 0 auto;
+}
+
+div.hbf_element h3.header {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: 0.7rem;
+}
+
+footer.hbf_element {
+	padding: 20px;
+}
+
+/* Card */
+
+.card {
+	border-radius: 12px;
+	border: none;
+	margin-bottom: 20px;
+	padding: 20px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+	display: flex;
+	margin: 1.5rem 1rem 0 1rem;
+	border-radius: 12px;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+	align-content: center;
+}
+
+.info {
+	border: none;
+	padding: 1.5rem;
+}
+
+.title {
+	letter-spacing: 0;
+	line-height: 1.375;
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.footer {
+	padding: 0.75rem;
+	border-top: 1px solid var(--colourBlack);
+	border-radius: 0 0 12px 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--colourNeutralCool);
+	border-radius: 6px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+.dropbtn {
+	padding: 10px 20px;
+	margin: 5px;
+	border-radius: 12px;
+	border: none;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+	font-size: 1rem;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+/* Style for dropdown items */
+.dropdown-content a {
+	padding: 12px 16px;
+	display: block;
+}
+
+.dropdown {
+	width: fit-content;
+}
+
+/* Hover effect on dropdown items */
+.dropdown-content a:first-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 6px 6px 0 0;
+}
+
+.dropdown-content a:not(:first-child):not(:last-child):hover {
+	background-color: var(--colourNeutralWarm);
+}
+
+.dropdown-content a:last-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 0 0 6px 6px;
+}
+
+/* Show the dropdown content when the button is hovered */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Reduced Styles */
+.reduced-container,
+.fields-container {
+	width: 100%;
+}
+
+.nav-logo-example img {
+	height: 100px;
+}
+
+.navbar-example {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.nav-links-mobile {
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 10px;
+	transition: 0.2s ease-in-out;
+}
+
+.nav-links-mobile.show {
+	display: flex;
+	transition: 0.2s ease-in-out;
+}
+
+.nav-links-mobile li {
+	margin-right: 0;
+	margin-bottom: 10px;
+	transition: 0.2s ease-in-out;
+}
+
+.mobile-menu-icon {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	transition: 0.2s ease-in-out;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: #000;
+	margin: 4px 0;
+}
+
+#mobile-menu-icon.hidden {
+	display: none;
+}
+
+.custom-mobile-menu {
+	width: 712px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.nav-links-mobile {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links-mobile li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.nav-links-mobile a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* Breakpoint Examples */
+
+.breakpoint-box-container {
+	padding-right: 0;
+	max-width: 185px;
+}
+
+.breakpoint-box {
+	height: 60px;
+	width: 100px;
+	margin: 1rem 2rem;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-weight: bold;
+}
+
+.breakpoint-text {
+	font-weight: 600;
+}
+
+.breakpoint-px {
+	margin-left: 1.5rem;
+}
+
+.sm-active,
+.md-active,
+.lg-active,
+.xl-active,
+.xxl-active {
+	display: none;
+}
+
+.embedded-code {
+	display: none;
+}

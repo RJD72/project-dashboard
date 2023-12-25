@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/global-nav.css" />
+    <link rel="stylesheet" href="./layout-style.css" />
+    <link rel="stylesheet" href="../styles/buttons-cards-footer.css" />
+    <script src="./layout-script.js"></script>
+  </head>
+  <body onload="liveCode(event, 'fullpage')">
+    <nav class="navbar navbar-expand-lg colourNeutralCool">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <a class="navbar-brand airline-logo" href="../../index.html"
+            ><img src="../assets/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../colour/colour.html">Colour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Page Layouts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data_vis/dataVisualization.html"
+              >Data Visualization</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="componentsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Components</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../buttons/buttons.html"
+                  >Buttons</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../cards/cards.html">Cards</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../fields/fields.html">Fields</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../footer/footer.html">Footer</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../heading/heading.html"
+                  >Header</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../navigation/navigation.html"
+                  >Navigation</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h1 class="heading-font">Page Layout</h1>
+      <div class="layout-tab">
+        <button
+          class="layout-tab-link active"
+          onclick="liveCode(event, 'fullpage')"
+        >
+          Full Width
+        </button>
+        <button class="layout-tab-link" onclick="liveCode(event, 'reduced')">
+          Reduced Width
+        </button>
+        <button class="layout-tab-link" onclick="liveCode(event, 'queries')">
+          Media Queries
+        </button>
+      </div>
+      <section>
+        <div class="row my-4">
+          <div class="col-3" id="layout-notes"></div>
+          <div class="col-9">
+            <textarea
+              name="live-code-editor"
+              id="live-text"
+              cols="110"
+              rows="20"
+              class="code-box"
+              onchange="liveCode()"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="heading-font">Layout</h2>
+        <div id="element" class="layout"></div>
+      </section>
+
+      <!-- prettier-ignore -->
+      <div class="embedded-code">
+<div id="fullpage-notes">
+	<h2 class="heading-font">Full Width Page</h2>
+	<p>
+		Our full page layout is comprised of global <code>header</code>, <code>nav</code>, and
+		<code>footer</code> elemets, along with the main content composed of cards. Varying sizing
+		of the cards will depend on it's content, as well as it's position on the page itself.
+	</p>
+</div>
+<div id="fullpage-code">
+<header class="hbf_element colourNeutralCool">
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="#">
+			<img src="../assets/starwing.png" class="logo" alt="Logo" />
+		</a>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<input class="form-control" type="text" placeholder="Search" />
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" type="button">Button 1</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" type="button">Button 2</button>
+				</li>
+				<li class="nav-item">
+					<button class="btn btn-link nav-link" type="button">Button 3</button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<main>
+	<div class="hbf_element">
+		<!--Whole Page Card-->
+		<div class="row">
+			<div class="col-12">
+				<div class="info card colourNeutralWarm">
+					<h3 class="header colourBluePastel">Whole Page Card</h3>
+					<p>
+						Content in this card will span the entire page width of the page, not
+						exceeding 1208px.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui
+						nesciunt deserunt aperiam consequuntur maiores.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--Small Page Card Row-->
+		<div class="row">
+			<!-- Small Card 1 -->
+			<div class="col-4">
+				<div class="card info colourOrangePastel">
+					<h3 class="title">Small Card 1</h3>
+					<p>
+						Content in this card will only span 1/3 of it's container row, not exceeding
+						354px.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+						molestiae quas vel sint commodi.
+					</p>
+				</div>
+			</div>
+			<!-- Small Card 2 -->
+			<div class="col-4">
+				<div class="card info colourOrangePastel">
+					<h3 class="title">Small Card 2</h3>
+					<p>
+						Content in this card will only span 1/3 of it's container row, not exceeding
+						354px.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eum
+						laborum itaque fugiat nulla aperiam.
+					</p>
+				</div>
+			</div>
+			<!-- Small Card 3 -->
+			<div class="col-4">
+				<div class="card info colourOrangePastel">
+					<h3 class="title">Small Card 3</h3>
+					<p>
+						Content in this card will only span 1/3 of it's container row, not exceeding
+						354px.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aliquid?
+						Doloremque autem itaque quam beatae?
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--Medium Card Row-->
+		<div class="row">
+			<!-- Meidum Card -->
+			<div class="col-8">
+				<div class="card info colourNeutralCool">
+					<h3 class="title">Medium Card</h3>
+					<p>
+						Content in this card will only span 2/3 of it's container row, not exceeding
+						781px.
+					</p>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, quod
+						incidunt ratione pariatur facere minima delectus cumque libero et? Officiis
+						voluptates maiores exercitationem cupiditate, facere a dolore laboriosam
+						dolor nostrum.
+					</p>
+				</div>
+			</div>
+			<!-- Small Card -->
+			<div class="col-4">
+				<div class="card info colourNeutralWarm">
+					<h3 class="title">Small Card</h3>
+					<p>
+						Content in this card will only span 1/3 of it's container row, not exceeding
+						354px.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate
+						labore sapiente, dolore nisi ad?
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<footer class="starwing-footer colourNeutralWarm">
+	<div class="terms">
+		<a href="#"><p>Privacy Statement</p></a>
+		<a href="#"><p>Terms of Use</p></a>
+		<a href="#"><p>Web Accessibility</p></a>
+		<p>
+		<small>&copy;2023 Star Wing. All rights reserved</small>
+		</p>
+	</div>
+	<div class="components">
+		<a href="#"><p>Buttons</p></a>
+		<a href="#"><p>Cards</p></a>
+		<a href="#"><p>Fields</p></a>
+		<a href="#"><p>Footer</p></a>
+		<a href="#"><p>Header</p></a>
+		<a href="#"><p>Navigation</p></a>
+	</div>
+	<div class="social-media">
+		<a href="#"><i class="fa-brands fa-facebook"></i></a>
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+		<a href="#"><i class="fa-brands fa-twitter"></i></a>
+		<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+	</div>
+</footer>
+</div>
+
+<div id="reduced-notes">
+	<h2 class="heading-font">Reduced Width Page</h2>
+	<p>
+		Similar to our full page layout, the page is comprised of global <code>header</code>, <code>nav</code>, and
+		<code>footer</code> elemets, along with the main content composed of cards. Depending on the viewport's size, the types of cards displayed will be limited, as well as the dropdown inputs. Using a combination of media queries and pseudo-classes, we have established a consistent and cohesive design across viewport sizes.
+	</p>
+</div>
+<div id="reduced-code">
+	<div class="row reduced-container">
+		<div class="col d-flex align-items-center justify-content-center">
+			<p class="text-center">Content in a reduced width will be styled appropriately based on the viewport size</p>
+		</div>
+		<div class="col">
+			<div class="row">
+			<header class="hbf_element ">
+				<nav class="colourNeutralCool">
+					<div class="navbar-example">
+						<a href="#" class="nav-logo-example"><img src="../assets/starwing.png" alt="Airline Star Wing"></a>
+				
+						<div class="mobile-menu">
+							<div class="mobile-menu-icon" id="mobile-menu-icon" onclick="toggleMobileMenu()">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+						</div>
+					</div>
+						<ul class="nav-links-mobile">
+							<li><a href="#mobile-menu-icon">Find Flights</a></li>
+							<li><a href="#mobile-menu-icon">Travel Information</a></li>
+							<li><a href="#mobile-menu-icon">Book Travel</a></li>
+							<li><a href="#mobile-menu-icon">Manage Flights</a></li>
+							<li><a href="#mobile-menu-icon">Our Company</a></li>
+							<li><a href="#mobile-menu-icon" class="close-button" onclick="closeMobileMenu()">Close Menu</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			</div>
+			<div class="row">
+				<main class="hbf_element">
+					<!-- Small Card -->
+					<div class="col">
+						<div class="card info colourNeutralWarm">
+							<h3 class="title">Small Card</h3>
+							<p>
+								Content in this container spans the entire width of a reduced width screen. 
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate
+								labore sapiente, dolore nisi ad?
+							</p>
+						</div>
+					</div>
+					<!-- Small Card -->
+					<div class="col">
+						<div class="card info colourNeutralWarm">
+							<h3 class="title">Small Card</h3>
+							<p>
+								Content in this container spans the entire width of a reduced width screen. 
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate
+								labore sapiente, dolore nisi ad?
+							</p>
+						</div>
+					</div>
+				</main>
+			</div>
+			<div class="row">
+			<footer class="hbf_element">
+				<div class="starwing-footer colourNeutralWarm">
+				<div class="terms">
+					<a href="#"><p>Privacy Statement</p></a>
+					<a href="#"><p>Terms of Use</p></a>
+					<a href="#"><p>Web Accessibility</p></a>
+					<p>
+					<small>&copy;2023 Star Wing. All rights reserved</small>
+					</p>
+				</div>
+				<div class="components">
+					<a href="#"><p>Buttons</p></a>
+					<a href="#"><p>Cards</p></a>
+					<a href="#"><p>Fields</p></a>
+					<a href="#"><p>Footer</p></a>
+					<a href="#"><p>Header</p></a>
+					<a href="#"><p>Navigation</p></a>
+				</div>
+				<div class="social-media">
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+				</div>
+			</div>
+			</footer>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id="queries-notes">
+	<h2 class="heading-font">Breakpoints</h2>
+	<p>We have identified five main breakpoints. Each of these are supported by generated style utilities such as <code>margin</code> and <code>padding</code> adjustments, <code>display</code>, and image resolution.</p>
+	<p>To experiement with different breakpoint sizes, resize the <i>Layout</i> section below.</p>
+</div>
+<div id="queries-code">
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">
+		<code class="breakpoint-text colourTextBlack ">--breakpointXS</code>
+		<code class="breakpoint-px colourTextBlackSoft ">(&gt;=400px)</code>
+	</div>
+</div>
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="sm-active breakpoint-box colourGreenStarWing colourTextBlack">Active</div>
+		<div class="sm-inactive breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">		
+			<code class="breakpoint-text colourTextBlack ">--breakpointSM</code>
+			<code class="breakpoint-px colourTextBlackSoft ">(&gt;=566px)</code>
+	</div>
+</div>
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="md-active breakpoint-box colourGreenStarWing colourTextBlack">Active</div>
+		<div class="md-inactive breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">
+		<code class="breakpoint-text colourTextBlack ">--breakpointMD</code>
+		<code class="breakpoint-px colourTextBlackSoft ">(&gt;=711px)</code>
+	</div>
+</div>
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="lg-active breakpoint-box colourGreenStarWing colourTextBlack">Active</div>
+		<div class="lg-inactive breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">
+		<code class="breakpoint-text colourTextBlack ">--breakpointLG</code>
+		<code class="breakpoint-px colourTextBlackSoft ">(&gt;=780px)</code>
+	</div>
+</div>
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="xl-active breakpoint-box colourGreenStarWing colourTextBlack">Active</div>
+		<div class="xl-inactive breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">
+		<code class="breakpoint-text colourTextBlack ">--breakpointXL</code>
+		<code class="breakpoint-px colourTextBlackSoft ">(&gt;=1200px)</code>
+	</div>
+</div>
+<div class="row align-items-center" >
+	<div class="col breakpoint-box-container">
+		<div class="xxl-active breakpoint-box colourGreenStarWing colourTextBlack">Active</div>
+		<div class="xxl-inactive breakpoint-box colourNeutralCool colourTextBlackSoft">Inactive</div>
+	</div>
+	<div class="col">
+		<code class="breakpoint-text colourTextBlack ">--breakpointXXL</code>
+		<code class="breakpoint-px colourTextBlackSoft ">(&gt;=1600px)</code>
+	</div>
+</div>
+</div>
+			</div>
+    </div>
+    <!-- Footer -->
+    <footer class="starwing-footer colourNeutralWarm">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="components">
+        <a href="../buttons/buttons.html"><p>Buttons</p></a>
+        <a href="../cards/cards.html"><p>Cards</p></a>
+        <a href="../fields/fields.html"><p>Fields</p></a>
+        <a href="../footer/footer.html"><p>Footer</p></a>
+        <a href="../heading/heading.html"><p>Header</p></a>
+        <a href="../navigation/navigation.html"><p>Navigation</p></a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+/* Nav Examples */
+.nav-logo-example img {
+	height: 100px;
+}
+
+.nav-code-box {
+	width: 550px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--colourNeutralCool);
+	border-radius: 6px;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* Style for dropdown items */
+.dropdown-content a {
+	padding: 12px 16px;
+	display: block;
+}
+
+.starwing-dropdown {
+	width: fit-content;
+}
+
+/* Hover effect on dropdown items */
+.dropdown-content a:first-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 6px 6px 0 0;
+}
+
+.dropdown-content a:not(:first-child):not(:last-child):hover {
+	background-color: var(--colourNeutralWarm);
+}
+
+.dropdown-content a:last-child:hover {
+	background-color: var(--colourNeutralWarm);
+	border-radius: 0 0 6px 6px;
+}
+
+/* Show the dropdown content when the button is hovered */
+.starwing-dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.navbar-example {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 10px 20px;
+}
+
+.nav-links-example,
+.nav-links-mobile {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links-example li,
+.nav-links-mobile li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.nav-links-example a,
+.nav-links-mobile a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*Search Bars*/
+.search-container {
+	position: relative;
+}
+
+.search-input {
+	width: 90%;
+	padding-bottom: 10px;
+	border: none;
+	border-bottom: 2px solid #ececf3;
+	transition: 0.2s ease-in-out;
+}
+
+.search-input:focus {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid var(--colourGreenStarWing);
+}
+
+/*SubNav Bars*/
+
+.green-bar {
+	background-color: var(--colourGreenStarWing);
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left-links {
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+
+.left-links:last-child {
+	padding-left: 15px;
+}
+
+.right-links {
+	display: flex;
+	align-items: center;
+}
+
+.green-bar a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.language-dropdown {
+	position: relative;
+}
+
+.nav-dropbtn {
+	background-color: transparent;
+	color: #333;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.language-dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.help-faq-link,
+.call-to-book-link,
+.login-register-link {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.search-container-sub-nav-2 {
+	position: relative;
+}
+
+.search-input-sub-nav {
+	border: none;
+	border-bottom: 2px solid #333;
+	/* Bottom border style */
+	padding: 5px;
+	font-size: 16px;
+	background-color: #b9d840;
+	color: black;
+	margin-right: 20px;
+	height: 100%;
+	transition: 0.2s ease-in-out;
+}
+
+.search-input-sub-nav:focus {
+	outline: none;
+	border-bottom: 2px solid var(--colourTextBlackSoft);
+	background-color: var(--colourWhite);
+	border-radius: 4px;
+	/* Change the border color when focused */
+}
+
+.search-input-sub-nav::placeholder {
+	color: black;
+}
+
+/* Mobile Menu */
+
+@media screen and (max-width: 1950px) {
+	.navbar-example {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #ffffff;
+		padding: 10px 20px;
+		position: relative;
+	}
+
+	.nav-links-mobile {
+		display: none;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 10px;
+		transition: 0.2s ease-in-out;
+	}
+
+	.nav-links-mobile.show {
+		display: flex;
+		transition: 0.2s ease-in-out;
+	}
+
+	.nav-links-mobile li {
+		margin-right: 0;
+		margin-bottom: 10px;
+		transition: 0.2s ease-in-out;
+	}
+
+	.mobile-menu-icon {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 20px;
+		transition: 0.2s ease-in-out;
+	}
+
+	.bar {
+		width: 25px;
+		height: 3px;
+		background-color: #000;
+		margin: 4px 0;
+	}
+}
+
+@media screen and (min-width: 1950px) {
+	.mobile-links {
+		display: none;
+	}
+}
+
+#mobile-menu-icon.hidden {
+	display: none;
+}
+
+.custom-mobile-menu {
+	width: 712px;
+	margin: 0 auto;
+	padding: 20px;
+}

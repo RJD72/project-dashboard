@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarWing Data Visualization</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS for Navbar & Footer (copied) -->
+    <link rel="stylesheet" href="../styles/global-nav.css" />
+    <link rel="stylesheet" href="../styles/buttons-cards-footer.css" />
+    <!-- CSS sheets -->
+    <link rel="stylesheet" href="./dataVisualization.css" />
+  </head>
+  <body>
+    <!-- Header/Navbar-->
+    <nav class="navbar navbar-expand-lg colourNeutralCool">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <a class="navbar-brand airline-logo" href="../../index.html"
+            ><img src="../assets/starwing.png" alt="Airline Star Wing"
+          /></a>
+
+          <h1 class="heading-font">Star Wings <br />Pattern Library</h1>
+        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../typography/typography.html"
+              >Typography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../colour/colour.html">Colour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../page_layout/page_layout.html"
+              >Page Layouts</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data Visualization</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="componentsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Components</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../buttons/buttons.html"
+                  >Buttons</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../cards/cards.html">Cards</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../fields/fields.html">Fields</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../footer/footer.html">Footer</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../heading/heading.html"
+                  >Header</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../navigation/navigation.html"
+                  >Navigation</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="data-visualization" class="container my-5">
+      <div class="container">
+        <h2 class="data-vis-heading-font">Data Visualization</h2>
+      </div>
+      <div
+        id="data-vis-nav"
+        class="container mt-5 d-flex align-items-center data-vis-heading-font"
+      >
+        <div class="dropdown data-vis-nav-item">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Charts
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div class="d-flex flex-column">
+              <a class="menu-item" href="#line-graphs">Line</a>
+              <a class="menu-item" href="#bar-graphs">Bar</a>
+              <a class="menu-item" href="#single-values">Single-Value</a>
+              <a class="menu-item" href="#area-charts">Area</a>
+              <a class="menu-item" href="#scatter-plot">Scatter</a>
+              <a class="menu-item" href="#pie-chart">Pie</a>
+              <a class="menu-item" href="#donut-chart">Donut</a>
+            </div>
+          </div>
+        </div>
+        <a href="#data-vis-palette" class="data-vis-nav-item">Palette</a>
+      </div>
+      <div class="container">
+        <hr />
+        <p>
+          Data is the key factor to making informed decisions. Therefore, it is
+          important for us to interpret and present data correctly and clearly.
+          Below are a few standards that we have set with these principles in
+          mind.
+        </p>
+      </div>
+
+      <section id="charts" class="container mt-5">
+        <h3 class="data-vis-heading-font">Charts</h3>
+        <p class="my-5">
+          Stylistically, our charts follow a clean, new, and fresh design. All
+          chart data should be in the 'Georgia' (serif) typeface, and all
+          colours should be complementary.
+        </p>
+      </section>
+
+      <section id="line-graphs" class="container mt-5">
+        <h4 class="data-vis-heading-font">Line Graphs</h4>
+        <div class="my-5 container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                Utilizes a series of connected points linked by lines to
+                illustrate variations in data values.
+              </p>
+              <p>
+                The horizontal axis represents a continuous progression, usually
+                referring to the passage of time.
+              </p>
+              <p>
+                The vertical axis displays data values related to a specific
+                metric of interest, relating to the progression on the
+                horizontal axis.
+              </p>
+              <p>
+                Use solid lines to display actual data trends, and dotted for
+                showing the average or the projection.
+              </p>
+              <p>Lines should be 2pts in weight.</p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/line-normal.png"
+                alt="Line Graph"
+              />
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/line-stacked.png"
+                alt="Stacked Line Graph"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bar-graphs" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Bar Graphs</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                Utilizes either horizontal or vertical bars to present data
+                related to a certain category.
+              </p>
+              <p>
+                One axis of the chart represents the categories under
+                comparison, while the other axis represents a defined scale of
+                values.
+              </p>
+              <p>
+                Use straight corners, and ensure equal spacing between bars.
+              </p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/bar-normal.png"
+                alt="Bar Graph"
+              />
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/bar-stacked.png"
+                alt="Stacked Bar Graph"
+              />
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/bar-horizontal.png"
+                alt="Horizontal Bar Graph"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="single-values" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Single-Value Charts</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                Utilizes specifically designed cards and circular progress bars,
+                paired with dynamic movement signals to effectively capture the
+                viewer's attention and guide their focus toward key performance
+                indicators.
+              </p>
+              <p>
+                Cards should be used to display important static numbers, and
+                ongoing trends.
+              </p>
+              <p>
+                Use &#129093; to represent positive trends and &#129095; to
+                represent negative trends.
+              </p>
+              <p>
+                Circular progress bars should be used to display percentages
+                related to progress.
+              </p>
+            </div>
+            <div
+              class="col-sm d-flex flex-column justify-content-center align-items-center"
+            >
+              <!-- Card 1 -->
+              <div class="rounded p-2 card-chart text-center w-25">
+                <span class="h1 card-chart-data">10,712</span
+                ><text class="value-support">&#129093;12%</text>
+                <br />
+                <small class="colourTextBlackSoft">This Month's Sales</small>
+              </div>
+
+              <!-- Card 2 -->
+
+              <img
+                class="img-fluid my-4"
+                src="./chartScreenshots/single1.png"
+              />
+
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/single-percentage.png"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="area-charts" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Area Charts</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                An extension of a line graph, illustrating the variation in
+                numeric values for one or more groups as they relate to a
+                secondary variable.
+              </p>
+              <p>
+                Depicts changes in volume or quantity over a defined time frame,
+                offering a sense of accumulation within quantitative data.
+              </p>
+              <p>
+                Particularly valuable for conveying the overarching trend or
+                pattern within a dataset.
+              </p>
+              <p>
+                Well-suited for visualizing multiple data series that involve
+                part-to-whole relationships or cumulative series of values.
+              </p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/area-normal.png"
+                alt="Area Graph"
+              />
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/area-stacked.png"
+                alt="Stacked Area Graph"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scatter-plot" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Scatter Plot</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>Visualizes the relationship between two variables.</p>
+              <p>
+                Used for showcasing data distribution and clustering tendencies.
+              </p>
+              <p>Points should be 5px by 5px.</p>
+              <p>
+                When using multiple categories, be sure to use different shapes
+                in order to differentiate them. General order is: circle,
+                diamond, triangle, square, upside-down triangle.
+              </p>
+              <p>
+                The chosen data should be able to be highlighted and brushed on
+                the scatter plot.
+              </p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/scatter-plot.png"
+                alt="Scatter Plot"
+              />
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/scatter-plot-multiple.png"
+                alt="Scatter Plot"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pie-chart" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Pie Chart</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                Presents the connections between a variable's components and its
+                overall structure.
+              </p>
+              <p>
+                The sum of the values along the circumference must always total
+                100%.
+              </p>
+              <p>
+                Discouraged, as they can make it difficult for users to
+                interpret the data clearly.
+              </p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/pie-chart.png"
+                alt="Pie Chart"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="donut-chart" class="container mt-5">
+        <hr />
+        <h4 class="my-5 data-vis-heading-font">Donut Chart</h4>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm">
+              <p>
+                Much like a pie chart but includes a hole in the center, which
+                is used for data or labels.
+              </p>
+              <p>Can be a more visually pleasing alternative to pie charts.</p>
+            </div>
+            <div class="col-sm">
+              <img
+                class="img-fluid"
+                src="./chartScreenshots/donut-chart.png"
+                alt="Donut Chart"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="data-vis-palette" class="container mt-5">
+        <hr />
+        <h3 class="my-5 data-vis-heading-font">Palette</h3>
+        <p>
+          The colour scheme for our data visualization is complementary and
+          pastel. Below is a set of established colour combonations based on
+          these standards. Utilize different shades in order to maximize
+          readability.
+        </p>
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-sm d-flex my-3">
+              <div class="data-vis-palette w-50">
+                <div
+                  class="colourRedPastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourRedPastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourRedPastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourRedPastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourRedPastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourRedPastel)"
+                >
+                  <span>Pastel Red</span>
+                </div>
+                <div
+                  class="colourRedPastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourRedPastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourRedPastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourRedPastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+              <div class="data-vis-palette w-50">
+                <div
+                  class="colourGreenPastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourGreenPastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourGreenPastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourGreenPastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourGreenPastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourGreenPastel)"
+                >
+                  <span>Pastel Green</span>
+                </div>
+                <div
+                  class="colourGreenPastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourGreenPastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourGreenPastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourGreenPastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm d-flex my-3">
+              <div class="data-vis-palette w-50">
+                <div
+                  class="colourBluePastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourBluePastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourBluePastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourBluePastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourBluePastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourBluePastel)"
+                >
+                  <span>Pastel Blue</span>
+                </div>
+                <div
+                  class="colourBluePastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourBluePastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourBluePastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourBluePastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+              <div class="data-vis-palette colourOrangePastel w-50">
+                <div
+                  class="colourOrangePastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourOrangePastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourOrangePastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourOrangePastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourOrangePastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourOrangePastel)"
+                >
+                  <span>Pastel Orange</span>
+                </div>
+                <div
+                  class="colourOrangePastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourOrangePastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourOrangePastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourOrangePastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm d-flex my-3">
+              <div class="data-vis-palette w-50">
+                <div
+                  class="colourPurplePastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourPurplePastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourPurplePastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourPurplePastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourPurplePastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourPurplePastel)"
+                >
+                  <span>Pastel Purple</span>
+                </div>
+                <div
+                  class="colourPurplePastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourPurplePastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourPurplePastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  title="var(--colourPurplePastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+              <div class="data-vis-palette w-50">
+                <div
+                  class="colourYellowPastel data-vis-slice lighter w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourYellowPastel) 20% lighter"
+                >
+                  <span>Lighter</span>
+                </div>
+                <div
+                  class="colourYellowPastel data-vis-slice light w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourYellowPastel) 10% lighter"
+                >
+                  <span>Light</span>
+                </div>
+                <div
+                  class="colourYellowPastel data-vis-slice w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourYellowPastel)"
+                >
+                  <span>Pastel Yellow</span>
+                </div>
+                <div
+                  class="colourYellowPastel data-vis-slice dark w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourYellowPastel) 10% darker"
+                >
+                  <span>Dark</span>
+                </div>
+                <div
+                  class="colourYellowPastel data-vis-slice darker w-100"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="var(--colourYellowPastel) 20% darker"
+                >
+                  <span>Darker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="starwing-footer colourNeutralWarm">
+      <div class="terms">
+        <a href="#"><p>Privacy Statement</p></a>
+        <a href="#"><p>Terms of Use</p></a>
+        <a href="#"><p>Web Accessibility</p></a>
+        <p>
+          <small>&copy;2023 Star Wing. All rights reserved</small>
+        </p>
+      </div>
+      <div class="components">
+        <a href="../buttons/buttons.html"><p>Buttons</p></a>
+        <a href="../cards/cards.html"><p>Cards</p></a>
+        <a href="../fields/fields.html"><p>Fields</p></a>
+        <a href="../footer/footer.html"><p>Footer</p></a>
+        <a href="../heading/heading.html"><p>Header</p></a>
+        <a href="../navigation/navigation.html"><p>Navigation</p></a>
+      </div>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </footer>
+
+    <!-- BootStrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

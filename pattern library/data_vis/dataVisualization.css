@@ -1,0 +1,119 @@
+/* General */
+
+#data-visualization {
+	max-width: 70rem;
+	font-family: "Roboto", sans-serif;
+	color: var(--colourTextBlack);
+}
+
+.data-vis-heading-font {
+	font-family: "Varela Round", sans-serif;
+	text-transform: uppercase;
+}
+
+/* Chart Navigation */
+
+#data-vis-nav .data-vis-nav-item {
+	margin-right: 1rem;
+}
+
+#data-vis-nav a {
+	color: var(--colourTextBlack);
+}
+
+#data-vis-nav a:hover {
+	text-decoration: none;
+}
+
+#data-visualization {
+	max-width: 70rem;
+}
+
+#data-visualization hr {
+	height: 0.09rem;
+	background-color: var(--colourNeutralCool);
+}
+
+/* Single-Value Charts */
+
+.card-chart {
+	min-width: 16rem;
+	font-family: "Georgia", serif;
+}
+
+.card-chart .card-chart-data {
+	color: var(--colourGreenStarWing);
+}
+
+.card-chart .value-support {
+	color: var(--colourRedPastel);
+	font-weight: bold;
+}
+
+.circular-chart {
+	display: block;
+	margin: 10px auto;
+	max-width: 80%;
+	max-height: 250px;
+	font-family: "Georgia", serif;
+}
+
+.circle-chart-bg {
+	fill: none;
+	stroke: var(--colourNeutralCool);
+	stroke-width: 3.8;
+}
+
+.circle-chart-percentage {
+	fill: none;
+	stroke-width: 2.8;
+	stroke-linecap: round;
+	stroke: var(--colourGreenStarWing);
+}
+
+.data-vis-percentage-text {
+	fill: var(--colourRedPastel);
+	font-size: 0.5em;
+	text-anchor: middle;
+}
+
+.data-vis-percentage-title {
+	font-size: 0.2em;
+	text-anchor: middle;
+	fill: var(--colourTextBlackSoft);
+}
+
+/* data-vis-palette */
+
+.data-vis-palette {
+	height: 10rem;
+}
+
+.data-vis-slice {
+	height: 2rem;
+	display: flex;
+	font-size: 0.9em;
+	justify-content: center;
+	align-items: center;
+}
+
+.data-vis-slice:hover {
+	border: 2px solid var(--colourTextBlackSoft);
+	cursor: default;
+}
+
+.data-vis-palette .light {
+	filter: brightness(1.1);
+}
+
+.data-vis-palette .lighter {
+	filter: brightness(1.2);
+}
+
+.data-vis-palette .dark {
+	filter: brightness(0.9);
+}
+
+.data-vis-palette .darker {
+	filter: brightness(0.8);
+}

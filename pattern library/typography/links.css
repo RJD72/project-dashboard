@@ -1,0 +1,114 @@
+/* Remove any margin or padding on body and ul */
+body,
+ul {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif; /* Use Roboto font for the body */
+	background-color: var(--starwing-colourCoolWhite); /* Set the background to True White */
+}
+
+ul {
+	z-index: 2;
+}
+/* Define brand colors */
+:root {
+	--starwing-colourGreenStarWing: #b9d840;
+	--starwing-colourWhite: #ffffff;
+	--starwing-colourNeutralWarm: #eeeaea;
+	--starwing-colourNeutralCool: #ececf3;
+	--starwing-colourBlack: #000000;
+	--starwing-colourGreenSuccess: #dff782;
+	--starwing-colourRedError: #ff9d9d;
+	--starwing-colourYellowWarning: #fce76f;
+	--starwing-colourBlueInfo: #91cbf8;
+	--starwing-colourRedPastel: #fab0ba;
+	--starwing-colourOrangePastel: #fddaa5;
+	--starwing-colourYellowPastel: #fdfcb8;
+	--starwing-colourGreenPastel: #acfcd7;
+	--starwing-colourBluePastel: #bde0fe;
+	--starwing-colourPurplePastel: #e5c9f8;
+	--starwing-colourTextBlack: rgba(0, 0, 0, 0.87);
+	--starwing-colourTextBlackSoft: rgba(0, 0, 0, 0.58);
+	--starwing-colourTextWhite: rgba(255, 255, 255, 1);
+	--starwing-colourTextWhiteSoft: rgba(255, 255, 255, 0.7);
+}
+
+header {
+	background-color: var(--starwing-colourGreenStarWing);
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+	color: var(--starwing-colourWhite);
+	font-family: "Varela", sans-serif; /* Use Varela font for headings */
+	font-weight: bold; /* Make the text bold */
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+/* Styles for each section */
+.section {
+	background-color: var(--starwing-colourNeutralCool);
+	padding: 20px;
+	border: 1px solid var(--starwing-colourNeutralWarm);
+	border-radius: 10px;
+	width: 300px;
+	text-align: center;
+	font-family: "Roboto", sans-serif; /* Use Roboto font for the body */
+	margin: 0 auto; /* Center the section horizontally */
+}
+
+.section h2 {
+	color: var(--starwing-colourBlack);
+}
+
+.section h3 {
+	color: var(--starwing-colourGreenStarWing);
+	margin-top: 20px;
+}
+
+.section p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+/* Reset default margin and padding */
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* Updated CSS for Scrollable Text Box */
+.scrolling-text-box {
+	max-height: 80vh;
+	width: 300px;
+	overflow: auto;
+	margin: 20px auto; /* Center the scrollable text box under the section */
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: var(--starwing-colourTextBlack);
+	font-family: "Courier New", Courier, monospace;
+	color: var(--starwing-colourRedPastel);
+	scrollbar-width: thin;
+	scrollbar-color: var(--starwing-colourGreenStarWing) transparent;
+}
+
+/* Style the scrollbar (optional) */
+.scrolling-text-box::-webkit-scrollbar {
+	width: 8px;
+}
+
+.scrolling-text-box::-webkit-scrollbar-thumb {
+	background-color: var(--starwing-colourGreenStarWing);
+	border-radius: 4px;
+}
